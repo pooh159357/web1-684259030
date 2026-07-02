@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vlewport"content="width-device-width,intial-scale-1.0">
+        <meta name="description"content="Learning about HTML">
+        <title>Heading</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(177, 177, 177, 0.527);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, rgb(56, 1, 255),rgba(43, 81, 153, 0.747));
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 50px 20px;
+        }
+
+
+        .text-title{
+            color:rgb(20, 143, 143);
+            font-size: 48px;
+            /*text-align: center;*/
+        }
+        .text-center{
+            text-align: center;
+        }
+        .card{
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:0 4px 8px cornsilk;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .h1-label {background-color: rgb(233, 78, 220);}
+        .h2-label {background-color: rgb(255, 0, 0);}
+        .h3-label {background-color: rgb(173, 197, 34);}
+        .h4-label {background-color: rgb(42, 197, 132);}
+        .h5-label {background-color: rgb(41, 184, 209);}
+        .h6-label {background-color: rgb(117, 33, 226);}
+        
+        pre {
+            background-color: antiquewhite;
+            border-left: 4px solid chartreuse;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+        .note {
+            color:chocolate;
+            background-color: aquamarine;
+        }
+        .note::before{
+            content:💡;
+        }
+        
+    </style>
+    </head>
+<body>
+    <section class="header">
+        <h1>เรียนรู้เว็บเบื้องต้น</h1>
+        <a href="index.html">Home</a>
+    </section>
+
+
+        <div class="container">
+            <div class="hero">
+                <h1 class="text-title">Workshop: HTML Heading</h1>
+                <p >ฝึกใช้แท็ก &lt;h1&gt; – &lt;h6&gt; และการปรับขนาดหัวข้อด้วย CSS</p>
+            </div>
+            <div class="card">
+                <h2>1.ความหมายของ Headings (H1–H6) เป็นหัวข้อรองของหน้าเว็บ</h2>
+                <ul>
+                    <li><span class="label h1-label">H1</span> – หัวข้อใหญ่สุดใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
+                    <li><span class="label h2-label">H2</span>– หัวข้อรองแบ่ง Section ของเนื้อหา</li>
+                    <li><span class="label h3-label">H3</span> – หัวข้อย่อยภายใน H2</li>
+                    <li><span class="label h4-label">H4</span> – ย่อยลงไปอีกระดับ</li>
+                    <li><span class="label h5-label">H5</span>– ใช้น้อยแต่เน้นลำดับข้อมูล</li>
+                    <li><span class="label h6-label">H6</span> – เล็กสุดใช้กับหัวข้อระดับลึก</li>
+                </ul>
+                <p style="border-left:4px solid red">💡เช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+            </div>
+            <div class="crad">
+                <h2>2.ตัวอย่างการใช ้H1–H6</h2>
+                <pre>
+                    <code>
+            &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+            &lt;h2&gt;HTML Basics&lt;/h2&gt;
+            &lt;h3&gt;What is HTML?&lt;/h3&gt;
+            &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+            &lt;h5&gt;Example Code&lt;/h5&gt;
+            &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+                    </code>
+            </pre>
+                <h1>H1: Welcome to My Website</h1>
+                <h2>H2: HTML Basics</h2>
+                <h3>H3: What is HTML?</h3>
+                <h4>H4: HTML Syntax</h4>
+                <h5>H5: Example Code</h5>
+                <h6 class="note">H6: Note about heading size</h6>
+            </div>
+            
+        </div>
+    
+
+
+
+
+
+    </body>
+    </html>
